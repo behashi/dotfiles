@@ -3,12 +3,12 @@
 #
 
 # terminal emulator
-super + Return
-	urxvt
+ctrl + alt + t
+	k3rmit
 
 # terminal emulator in same window as currently focused
 super + shift + Return
-	urxvt -cd "`xcwd`"
+	k3rmit -cd "`xcwd`"
 
 # program launcher
 super + d
@@ -20,7 +20,7 @@ super + Escape
 
 # Open sxhkdrc config file
 super F1
-	urxvt -e vim /home/alex/.config/sxhkd/sxhkdrc
+	k3rmit -e vim /home/iamtrashu/.config/sxhkd/sxhkdrc
 
 #
 # bspwm hotkeys
@@ -28,8 +28,7 @@ super F1
 
 # restart bspwm
 super F2
-	bspc wm -r
-
+	$HOME/.config/bspwm/bspwmrc
 # quick bspwm
 super + shift + e
     bspc quit
@@ -147,10 +146,10 @@ super + w
 	chromium
 
 super + r
-	urxvt -e ranger
+	k3rmit -e ranger
 
 super + shift + r
-	urxvt -e sudo ranger
+	k3rmit -e sudo ranger
 
 super + x
     sudo betterlockscreen -l
